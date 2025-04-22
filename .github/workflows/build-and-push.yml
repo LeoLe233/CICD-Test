@@ -30,7 +30,7 @@ jobs:
           host: ${{ vars.SSH_HOST }}
           username: ${{ vars.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: whoami
+          script: cd /home/ubuntu/cicd-test && docker pull leole233/cicd-test:latest && docker-compose up -d
 
 
 
