@@ -6,7 +6,7 @@ A simple Node.js application with one endpoint that returns a "Hello World" mess
 
 - Express.js REST API
 - Docker containerization
-- CI/CD with GitHub Actions
+- CI/CD with GitHub Action
 - Automated tests
 
 ## Prerequisites
