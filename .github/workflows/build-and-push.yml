@@ -24,6 +24,15 @@ jobs:
       - name: Push Docker image
         run: docker push leole233/cicd-test:latest
 
+      - name: SSH to server
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ vars.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: whoami
+
+
 
         
 
