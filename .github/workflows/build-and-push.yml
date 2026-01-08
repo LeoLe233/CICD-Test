@@ -30,7 +30,7 @@ jobs:
           host: ${{ vars.SSH_HOST }}
           username: ${{ vars.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: docker pull leole233/cicd-test:latest && docker run -d --name test-container -p 8080:8080 leole233/cicd-test:latest
+          script: sudo docker pull leole233/cicd-test:latest && sudo docker run -d --name test-container -p 8080:8080 leole233/cicd-test:latest
 
 
 
